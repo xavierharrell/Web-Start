@@ -1,0 +1,43 @@
+/**
+*
+* My common media queries. This list will grow and change.
+*
+**/
+
+/**
+*
+* I use Bourbon. So the first set of breakpoints won't work unless you have that installed.
+*
+**/
+
+
+$small: new-breakpoint(min-width 300px);
+$xxsmall: new-breakpoint(min-width 320px);
+$medium: new-breakpoint(min-width 600px);
+$xxmedium: new-breakpoint(min-width 768px);
+$large: new-breakpoint(min-width 900px);
+$xxlarge: new-breakpoint(min-width 1024px);
+$huge: new-breakpoint(min-width 1200px);
+$xxhuge: new-breakpoint(min-width 1280px);
+$xxxhuge: new-breakpoint(min-width 1400px);
+
+$xxsmall: 200px;
+$xsmall: 300px;
+$small: 320px;
+$medium: 600px;
+$xxmedium: 700px;
+$large: 900px;
+$xxlarge: 1025px;
+$wide: 1200px;
+$huge: 1280px;
+
+
+$xhuge: 1420px;
+
+$tiny-viewport: new-breakpoint(min-width em($medium) max-width em($wide));
+$small-viewport: new-breakpoint(min-width em($xxmedium + 1));
+$medium-viewport: new-breakpoint(min-width em($large + 1));
+$large-viewport: new-breakpoint(min-width em($wide +1));
+
+$related-small: new-breakpoint(min-width em($xxsmall) max-width em($large));
+$related-large: new-breakpoint(min-width em($large +1));

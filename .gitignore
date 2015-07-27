@@ -1,0 +1,5 @@
+.DS_Store
+build
+Desktop.ini
+node_modules
+src/javascript/vendor/*
