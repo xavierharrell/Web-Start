@@ -1,34 +1,26 @@
 {
   "name": "Web-Start",
-  "version": "1.0.1",
-  "description": "Web starting point project with gulp tasks",
+  "version": "1.0.2",
+  "description": "Web starting point project with gulp build system",
   "repository": {
     "type": "git",
     "url": "git://github.com/xavierharrell/Gulp-Start-Point.git"
   },
-  "browser": {
-    "Modernizr": "/browsernizr",
-    "classie": "./src/javascript/vendor/bower_components/classie/classie.js",
-    "picturefill": "./src/javascript/vendor/bower_components/picturefill/dist/picturefill.min.js",
-    "snap": "./src/javascript/vendor/bower_components/snap.svg/dist/snap.svg-min.js"
-  },
+  "browser": {},
   "browserify": {
     "transform": [
       "browserify-shim",
       "coffeeify"
     ]
   },
-  "browserify-shim": {
-    "classie": "classie",
-    "picturefill": "picturefill",
-    "snap": "snap"
-  },
+  "browserify-shim": {},
   "devDependencies": {
     "browser-sync": "~2.2.2",
     "browserify": "^9.0.3",
     "browserify-shim": "^3.8.2",
-    "browsernizr": "^1.0.2",
     "coffeeify": "~1.0.0",
+    "desandro-classie": "^1.0.1",
+    "gsap": "^1.17.0",
     "gulp": "^3.8.11",
     "gulp-autoprefixer": "^2.3.1",
     "gulp-changed": "^1.1.1",
@@ -54,8 +46,11 @@
     "karma-sinon-chai": "^0.3.0",
     "lodash": "^3.3.1",
     "merge-stream": "^0.1.7",
+    "modernizr": "^3.0.0-alpha.4",
+    "picturefill": "^2.3.1",
     "pretty-hrtime": "~1.0.0",
     "require-dir": "^0.1.0",
+    "snapsvg": "^0.4.0",
     "vinyl-source-stream": "~1.0.0",
     "watchify": "^2.4.0"
   },

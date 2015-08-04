@@ -1,4 +1,4 @@
-web-starter
+Web-Starter
 ============
 
 Starter Gulp + Browserify project. This gets me off the ground running. Will add more instructions later.
@@ -16,18 +16,37 @@ Includes the following tools, tasks, and workflows:
 - Error handling in the console [and in Notification Center](https://github.com/mikaelbr/gulp-notify)
 - Shimming non common-js vendor code with other dependencies (like a jQuery plugin)
 
-### Install npm dependencies
+## Install dependencies
 ```
 npm install
 ```
-
-####WARNING
-Install Bourbon & Neat. **When you run gulp**, an error will throw asking for Bourbon.
-
-[Bourbon](https://github.com/thoughtbot/bourbon) Instructions on how to install Bourbon
-
-[Neat](https://github.com/thoughtbot/neat) Might as well throw this in also.
-
-
+```
+bower install
+```
 This runs through all dependencies listed in `package.json` and downloads them to a `node_modules` folder in your project directory.
 
+## Bourbon and Neat
+
+[Bourbon](http://bourbon.io/)
+
+- Lightweight mixin library
+
+[Neat](http://neat.bourbon.io/)
+
+- Semantic grid framework
+
+Both of these are my preferred libraries to get started quickly. I've added them using NPM so it should make it easier to maintain than Bower but that could be easily be changed.
+
+## Other helpful items
+
+-[Classie](https://github.com/desandro/classie)
+Lightweight JS library to help with CSS classes
+
+-[GSAP](http://greensock.com/gsap)
+Animation library that can target any DOM element
+
+-[SnapSvg](http://snapsvg.io/)
+SVG creation and animation library.
+
+-[Picturefill](https://scottjehl.github.io/picturefill/)
+Responsive image polyfill.
