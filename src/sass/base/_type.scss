@@ -1,0 +1,47 @@
+/* Base Font Family */
+
+$base-font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+
+/* Base Font Size */
+$base-font-size: 1em;
+
+/* Overall Typography */
+body{
+	font-family: $base-font-family;
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+	font-feature-settings: "kern", "liga", "pnum";
+	color: $base-font-color;
+}
+
+/* Headers */
+h1{font-size: 2em}
+h2{font-size: 1.5em}
+h3{font-size: 1.25em}
+h4{font-size: 1em}
+h5{font-size: 0.875em}
+h6{font-size: 0.75em}
+
+p{
+	margin: 0 0 $base-spacing;
+}
+
+a{
+	color: $action-color;
+	text-decoration: none;
+	transition: color 0.2s ease-out;
+
+	&:active,
+	&:hover,
+	&:focus{
+		color: shade($action-color, 20%);
+	}
+}
+
+hr{
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	border-bottom: $base-border;
+	margin: $base-spacing 0;
+}

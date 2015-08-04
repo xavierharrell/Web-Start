@@ -1,0 +1,16 @@
+@import "./base/colors";
+
+/* Line Height */
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+/* Spacing */
+$base-spacing: $base-line-height * 1.25em;
+$small-spacing: $base-line-height / 2;
+
+/* Border Radius */
+$base-border-radius: 2px;
+
+/* Border */
+$base-border: 1px solid $base-border-color;
+$base-border-color: $dark-gray;
